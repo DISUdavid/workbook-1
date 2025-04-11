@@ -2,6 +2,8 @@ package com.pluralsight;
 
 import com.sun.tools.javac.Main;
 
+import java.util.Scanner;
+
 public class MathApp {
 
     public static void main(String[] args) {
@@ -55,8 +57,9 @@ public class MathApp {
 
         double middle = Math.random();
 
-        System.out.println(middle);
+        //System.out.println(middle);
 
+        Scanner sc = new Scanner()
 
 
 
