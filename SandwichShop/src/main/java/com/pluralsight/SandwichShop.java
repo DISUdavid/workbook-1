@@ -16,9 +16,13 @@ public class SandwichShop {
         double regularSandwich = 5.45;
         double largeSandwich = 8.95;
 
+
+
         System.out.print("Enter sandwich size: ");
         int sandwichSize = scanner.nextInt();
         System.out.println(sandwichSize);
+
+
 
         double price;
         if (sandwichSize == 1) {
@@ -33,20 +37,31 @@ public class SandwichShop {
         int customerAge = scanner.nextInt();
         System.out.println(customerAge);
 
+        System.out.println("Does Customer want loaded: ");
+        boolean feedback = scanner.hasNextBoolean();
+        System.out.println(feedback);
+        feedback = true;
+
+        double loadedPrice = 0;
+        if (sandwichSize == 1 &  feedback)
+            loadedPrice = regularSandwich + 1;
+        else if (sandwichSize == 2 & feedback);
+            loadedPrice = largeSandwich + 1.75;
+
 
         double discount;
 
         if (customerAge <= 17) {
-            discount = price * .10;
-            System.out.print(price - discount);
+            discount = loadedPrice * .10;
+            System.out.print(loadedPrice - discount);
         }
         if (customerAge >= 65) {
-            discount = price * .20;
-            System.out.print(price - discount);
+            discount = loadedPrice * .20;
+            System.out.print(loadedPrice - discount);
 
-        } else {
-            System.out.println(price);
+//
         }
+
 
     }
 }
