@@ -21,7 +21,7 @@ public class PayrollCalculator {
 
          //Identify data type and create according statement
          System.out.print("Enter your name: ");
-         String name = scanner.next();
+         String name = scanner.nextLine();
 
          //Scanner for hours
          System.out.print("Enter hours worked: ");
