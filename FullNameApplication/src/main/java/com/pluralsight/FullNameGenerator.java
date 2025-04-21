@@ -1,4 +1,5 @@
 package com.pluralsight;
+
 import java.util.Scanner;
 
 
@@ -23,20 +24,12 @@ public class FullNameGenerator {
         System.out.println(lastName);
 
 
-        String fullName = firstName +" " + middleName + " " +  lastName ;
+        String fullName = firstName + " " + middleName + " " + lastName;
 
         System.out.println(fullName);
 
 
-
-
     }
-
-
-
-
-
-
 
 
 }
